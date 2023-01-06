@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .small-button {
+        @apply w-fit bg-primary px-2 py-1 rounded-md bg-opacity-10 text-primary;
+    }
+    .card-border-t {
+        @apply w-52 h-52 border border-primary border-opacity-50 rounded-xl flex flex-col items-center justify-center gap-3;
+    }
+    .tech-logo {
+        @apply opacity-50 w-14 h-fit hover:scale-110 transition;
+    }
+}
