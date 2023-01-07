@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="My name is Perdi and I have participated in an extracurricular activity called ICT (Information and Communication Technology) while in high school. I have been familiar with programming since my second year of high school. I am a motivated and driven individual who is always looking for new challenges and opportunities to learn and grow.">
+    <meta name="keywords" content="Portfolio, Website, Web Developer, Developer, Engineering, programing">
+
     <link rel="stylesheet" href="./dist/output.css">
     <title>Perdi Dev</title>
+    <link rel="shortcut icon" href="./src/img/icon-logo.png" type="image/x-icon">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="bg-slate-900">
     <header class="w-full flex justify-center py-5 md:px-16">
@@ -47,10 +55,10 @@
     <!-- Main -->
     <section id="home" class="container mx-auto">
         <div class="w-full h-[87vh] py-5 gap-3 flex flex-col md:flex-row md:justify-between items-center md:px-24">
-            <div class="md:w-1/3 flex justify-center mb-5 md:mb-0">
+            <div class="md:w-1/3 flex justify-center mb-5 md:mb-0" data-aos="zoom-in">
                 <img class="rounded-full w-64 md:w-full shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.25)] shadow-blue-800" src="./src/img/profile.jpg" alt="Perdi Dev">
             </div>
-            <div class="md:w-1/3 space-y-2 md:space-y-4 md:order-first">
+            <div class="md:w-1/3 space-y-2 md:space-y-4 md:order-first" data-aos="slide-right">
                 <div class="small-button">
                     <h2 class="font-semibold tracking-wide">Hi! Ewako✊</h2>
                 </div>
@@ -74,7 +82,7 @@
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/3 flex md:justify-end pt-3 md:pt-0">
+            <div class="md:w-1/3 flex md:justify-end pt-3 md:pt-0" data-aos="slide-left">
                 <div class="gap-3 flex md:flex-col items-center md:items-end text-primary text-opacity-50 font-medium">
                     <a class="px-2 inline-flex gap-1 hover:scale-105 group/item" href="https://blog.perdidev.my.id/" target="_blank">
                         Lihat Blog
@@ -103,15 +111,15 @@
     <section id="short">
         <div class="w-full h-fit border-y border-y-primary border-opacity-50 flex justify-center py-16 md:py-28">
             <div class="px-12 md:flex gap-5 space-y-6 md:space-y-0">
-                <div class="card-border-t hover:scale-105 transition">
+                <div class="card-border-t hover:scale-105 transition" data-aos="fade-up">
                     <img src="./src/img/icon/CodeIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
                     <h6 class="text-white font-semibold tracking-wide text-xl">Programing</h6>
                 </div>
-                <div class="w-52 h-52 bg-primary bg-opacity-20 rounded-xl flex flex-col items-center justify-center gap-3 hover:scale-105 transition">
+                <div class="w-52 h-52 bg-primary bg-opacity-20 rounded-xl flex flex-col items-center justify-center gap-3 hover:scale-105 transition" data-aos="fade-up">
                     <img src="./src/img/icon/ProjectsIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
                     <h6 class="text-white font-semibold tracking-wide text-xl">Blogging</h6>
                 </div>
-                <div class="card-border-t hover:scale-105 transition">
+                <div class="card-border-t hover:scale-105 transition" data-aos="fade-up">
                     <img src="./src/img/icon/DesignIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
                     <h6 class="text-white font-semibold tracking-wide text-xl">Design</h6>
                 </div>
@@ -122,7 +130,7 @@
 
     <!-- About -->
     <section id="about" class="container mx-auto">
-        <div class="flex flex-col items-center pt-24 pb-12 px-12 md:px-24 space-y-4">
+        <div class="flex flex-col items-center pt-24 pb-12 px-12 md:px-24 space-y-4" data-aos="flip-left">
             <div class="small-button">
                 <p class="text-opacity-50">About</p>
             </div>
@@ -157,31 +165,31 @@
                 </div>
             </div>
             <div class="flex flex-wrap w-full">
-                <div class="w-full md:w-1/3 p-3">
+                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
                     <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
                         <a href="https://blog.perdidev.my.id/"><h2 class="font-semibold text-white text-lg tracking-wide">Home-Blog</h2></a>
                         <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
                             <p class="text-white text-opacity-50 text-xs">Wordpress</p>
                         </div>
-                        <img src="./src/img/portfolio/blog-perdi.webp" alt="Profile 1" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
+                        <img src="./src/img/portfolio/blog-perdi.webp" alt="Home-Blog" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 p-3">
+                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
                     <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
                         <a href="https://home.ict.sma2pangkep.sch.id/"><h2 class="font-semibold text-white text-lg tracking-wide">Home-ICT</h2></a>
                         <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
                             <p class="text-white text-opacity-50 text-xs">Bootstrap</p>
                         </div>
-                        <img src="./src/img/portfolio/home-ict.webp" alt="Profile 1" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
+                        <img src="./src/img/portfolio/home-ict.webp" alt="Home-ICT" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 p-3">
+                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
                     <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
                         <a href="https://snc.sma2pangkep.sch.id/"><h2 class="font-semibold text-white text-lg tracking-wide">SNC-Osis-ICT</h2></a>
                         <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
                             <p class="text-white text-opacity-50 text-xs">Codeigniter</p>
                         </div>
-                        <img src="./src/img/portfolio/snc-osis-ict.webp" alt="Profile 1" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
+                        <img src="./src/img/portfolio/snc-osis-ict.webp" alt="SNC-Osis-ICT" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
                     </div>
                 </div>
             </div>
@@ -191,7 +199,7 @@
 
     <!-- Technologi -->
     <section id="technology" class="container mx-auto">
-        <div class="flex flex-col items-center py-16 space-y-4">
+        <div class="flex flex-col items-center py-16 space-y-4" data-aos="fade-in">
             <div class="small-button">
                 <p>Skill-Exprience</p>
             </div>
@@ -243,7 +251,7 @@
 
     <!-- Contact -->
     <section id="contact" class="container mx-auto">
-        <div class="w-full flex flex-col items-center gap-4 p-16">
+        <div class="w-full flex flex-col items-center gap-4 p-16" data-oas="zoom-in-up">
             <div class="small-button">
                 <p>Contact</p>
             </div>
@@ -289,5 +297,10 @@
     </footer>
     <!-- End footer -->
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
