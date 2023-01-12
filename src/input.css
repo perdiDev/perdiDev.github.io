@@ -12,4 +12,7 @@
     .tech-logo {
         @apply opacity-50 w-14 h-fit hover:scale-110 transition;
     }
+    .navbar-fixed {
+        @apply fixed z-[9999];
+    }
 }
