@@ -1,315 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="My name is Perdi and I have participated in an extracurricular activity called ICT (Information and Communication Technology) while in high school. I have been familiar with programming since my second year of high school. I am a motivated and driven individual who is always looking for new challenges and opportunities to learn and grow.">
-    <meta name="keywords" content="Portfolio, Website, Web Developer, Developer, Engineering, programing">
+    <meta
+      name="description"
+      content="My name is Perdi and I have participated in an extracurricular activity called ICT (Information and Communication Technology) while in high school. I have been familiar with programming since my second year of high school. I am a motivated and driven individual who is always looking for new challenges and opportunities to learn and grow."
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Website, Web Developer, Developer, Engineering, programing"
+    />
 
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css" />
     <title>Perdi Dev</title>
-    <link rel="shortcut icon" href="./src/img/icon-logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./src/img/icon-logo.png"
+      type="image/x-icon"
+    />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body class="bg-slate-900">
-    <header class="absolute top-0 left-0 z-10 flex w-full justify-center py-5 md:px-16 items-center">
-        <div class="relative bg-primary w-11/12 h-12 bg-opacity-5 rounded-lg shadow-md flex justify-between items-center px-5">
-            <div class="font-bold text-xl text-primary"><a href="#">Perdi <span class="text-white text-opacity-50">Dev</span></a></div>
-            <nav class="py-2 hidden md:block">
-                <ul class="flex gap-5 font-normal text-white text-opacity-50">
-                    <li class="hover:text-primary hover:text-opacity-50"><a href="#home">Home</a></li>
-                    <li class="hover:text-primary hover:text-opacity-50"><a href="#about">About</a></li>
-                    <li class="hover:text-primary hover:text-opacity-50"><a href="#portofolio">Portofolio</a></li>
-                    <li class="hover:text-primary hover:text-opacity-50"><a href="#technology">Tech</a></li>
-                </ul>
-            </nav>
-            <nav class="py-2 md:hidden">
-                <ul class="flex gap-5 text-white text-opacity-50 transition-all">
-                    <li class="hover:scale-105 hover:opacity-70">
-                        <a href="#home">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="hover:scale-105 hover:opacity-70">
-                        <a href="#home">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+  </head>
+  <body class="bg-slate-900 overflow-x-hidden">
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full justify-center py-5 md:px-16 items-center"
+    >
+      <div
+        class="relative bg-primary w-11/12 h-12 bg-opacity-5 rounded-lg shadow-md flex justify-between items-center px-5"
+      >
+        <div class="font-bold text-xl text-primary">
+          <a href="#"
+            >Perdi <span class="text-white text-opacity-50">Dev</span></a
+          >
         </div>
+        <nav class="py-2 hidden md:block">
+          <ul class="flex gap-5 font-normal text-white text-opacity-50">
+            <li class="hover:text-primary hover:text-opacity-50">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:text-primary hover:text-opacity-50">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-primary hover:text-opacity-50">
+              <a href="#portofolio">Portofolio</a>
+            </li>
+            <li class="hover:text-primary hover:text-opacity-50">
+              <a href="#technology">Tech</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="py-2 md:hidden">
+          <ul class="flex gap-5 text-white text-opacity-50 transition-all">
+            <li class="hover:scale-105 hover:opacity-70">
+              <a href="#home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="hover:scale-105 hover:opacity-70">
+              <a href="#home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Main -->
     <section id="home" class="container mx-auto">
-        <div class="w-full h-screen py-5 gap-3 flex flex-col md:flex-row md:justify-between justify-center items-center md:px-24">
-            <div class="md:w-1/3 flex justify-center mb-5 md:mb-0" data-aos="zoom-in">
-                <img class="rounded-full w-64 md:w-full shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.25)] shadow-blue-800" src="./src/img/profile.jpg" alt="Perdi Dev">
-            </div>
-            <div class="md:w-1/3 space-y-2 md:space-y-4 md:order-first" data-aos="slide-right">
-                <div class="small-button">
-                    <h2 class="font-semibold tracking-wide">Hi! Ewako✊</h2>
-                </div>
-                <h1 class="font-bold text-white text-4xl md:text-5xl md:w-32 tracking-wider">Perdi Dev</h1>
-                <h3 class="text-white text-opacity-50 text-sm w-72">Informatics Engineering Student & Web Developer</h3>
-                <div class="hidden md:flex gap-2">
-                    <a href="https://linkedin.com/in/perdi-dev" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-linkedin opacity-50" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/perdiDev" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-github opacity-50" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/perdidev/" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-instagram opacity-50" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="md:w-1/3 flex md:justify-end pt-3 md:pt-0" data-aos="slide-left">
-                <div class="gap-3 flex md:flex-col items-center md:items-end text-primary text-opacity-50 font-medium">
-                    <a class="px-2 inline-flex gap-1 hover:scale-105 group/item" href="https://blog.perdidev.my.id/" target="_blank">
-                        Lihat Blog
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layers-linked opacity-50 group-hover/item:-translate-y-2" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7B4AE2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M19 8.268a2 2 0 0 1 1 1.732v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h3" />
-                            <path d="M5.003 15.734a2 2 0 0 1 -1.003 -1.734v-8a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-3" />
-                        </svg>
-                    </a>
-                    <a class="border-primary w-fit inline-flex gap-1 border-opacity-50 border px-2 py-1 rounded-md transition hover:scale-105 group/item" href="/src/file/Perdi-CV.pdf" download="Perdi-CV">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-download opacity-50 animate-bounce group-hover/item:animate-none" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7B4AE2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-                            <line x1="12" y1="11" x2="12" y2="17" />
-                            <polyline points="9 14 12 17 15 14" />
-                        </svg>
-                        Download CV
-                    </a>
-                </div>
-            </div>
+      <div
+        class="w-full h-screen py-5 gap-3 flex flex-col md:flex-row md:justify-between justify-center items-center md:px-24"
+      >
+        <div
+          class="md:w-1/3 flex justify-center mb-5 md:mb-0"
+          data-aos="zoom-in"
+        >
+          <img
+            class="rounded-full w-64 md:w-full shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.25)] shadow-blue-800"
+            src="./src/img/profile.jpg"
+            alt="Perdi Dev"
+          />
         </div>
+        <div
+          class="md:w-1/3 space-y-2 md:space-y-4 md:order-first overflow-hidden"
+          data-aos="slide-right"
+        >
+          <div class="small-button">
+            <h2 class="font-semibold tracking-wide">Hi! Ewako✊</h2>
+          </div>
+          <h1
+            class="font-bold text-white text-4xl md:text-5xl md:w-32 tracking-wider"
+          >
+            Perdi Dev
+          </h1>
+          <h3 class="text-white text-opacity-50 text-sm w-72">
+            Informatics Engineering Student & Web Developer
+          </h3>
+          <div class="hidden md:flex gap-2">
+            <a
+              href="https://linkedin.com/in/perdi-dev"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-linkedin opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/perdiDev"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-github opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/perdidev/"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-instagram opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="md:w-1/3 flex md:justify-end pt-3 md:pt-0 overflow-hidden"
+          data-aos="slide-left"
+        >
+          <div
+            class="gap-3 flex md:flex-col items-center md:items-end text-primary text-opacity-50 font-medium"
+          >
+            <a
+              class="px-2 inline-flex gap-1 hover:scale-105 group/item"
+              href="https://blog.perdidev.my.id/"
+              target="_blank"
+            >
+              Lihat Blog
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-layers-linked opacity-50 group-hover/item:-translate-y-2"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#7B4AE2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19 8.268a2 2 0 0 1 1 1.732v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h3"
+                />
+                <path
+                  d="M5.003 15.734a2 2 0 0 1 -1.003 -1.734v-8a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-3"
+                />
+              </svg>
+            </a>
+            <a
+              class="border-primary w-fit inline-flex gap-1 border-opacity-50 border px-2 py-1 rounded-md transition hover:scale-105 group/item"
+              href="/src/file/Perdi-CV.pdf"
+              download="Perdi-CV"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-file-download opacity-50 animate-bounce group-hover/item:animate-none"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#7B4AE2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path
+                  d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+                />
+                <line x1="12" y1="11" x2="12" y2="17" />
+                <polyline points="9 14 12 17 15 14" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Short -->
     <section id="short">
-        <div class="w-full h-fit border-y border-y-primary border-opacity-50 flex justify-center py-16 md:py-28">
-            <div class="px-12 md:flex gap-5 space-y-6 md:space-y-0">
-                <div class="card-border-t hover:scale-105 transition" data-aos="fade-up">
-                    <img src="./src/img/icon/CodeIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
-                    <h6 class="text-white font-semibold tracking-wide text-xl">Programing</h6>
-                </div>
-                <div class="w-52 h-52 bg-primary bg-opacity-20 rounded-xl flex flex-col items-center justify-center gap-3 hover:scale-105 transition" data-aos="fade-up">
-                    <img src="./src/img/icon/ProjectsIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
-                    <h6 class="text-white font-semibold tracking-wide text-xl">Blogging</h6>
-                </div>
-                <div class="card-border-t hover:scale-105 transition" data-aos="fade-up">
-                    <img src="./src/img/icon/DesignIcon.svg" weight="12" height="12" alt="CodeIcon" class="w-32 h-3w-32">
-                    <h6 class="text-white font-semibold tracking-wide text-xl">Design</h6>
-                </div>
-            </div>
+      <div
+        class="w-full h-fit border-y border-y-primary border-opacity-50 flex justify-center py-16 md:py-28"
+      >
+        <div class="px-12 md:flex gap-5 space-y-6 md:space-y-0">
+          <div
+            class="card-border-t hover:scale-105 transition"
+            data-aos="fade-up"
+          >
+            <img
+              src="./src/img/icon/CodeIcon.svg"
+              weight="12"
+              height="12"
+              alt="CodeIcon"
+              class="w-32 h-3w-32"
+            />
+            <h6 class="text-white font-semibold tracking-wide text-xl">
+              Programing
+            </h6>
+          </div>
+          <div
+            class="w-52 h-52 bg-primary bg-opacity-20 rounded-xl flex flex-col items-center justify-center gap-3 hover:scale-105 transition"
+            data-aos="fade-up"
+          >
+            <img
+              src="./src/img/icon/ProjectsIcon.svg"
+              weight="12"
+              height="12"
+              alt="CodeIcon"
+              class="w-32 h-3w-32"
+            />
+            <h6 class="text-white font-semibold tracking-wide text-xl">
+              Blogging
+            </h6>
+          </div>
+          <div
+            class="card-border-t hover:scale-105 transition"
+            data-aos="fade-up"
+          >
+            <img
+              src="./src/img/icon/DesignIcon.svg"
+              weight="12"
+              height="12"
+              alt="CodeIcon"
+              class="w-32 h-3w-32"
+            />
+            <h6 class="text-white font-semibold tracking-wide text-xl">
+              Design
+            </h6>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End Short -->
 
     <!-- About -->
     <section id="about" class="container mx-auto">
-        <div class="flex flex-col items-center pt-24 pb-12 px-12 md:px-24 space-y-4" data-aos="flip-left">
-            <div class="small-button">
-                <p class="text-opacity-50">About</p>
-            </div>
-            <div class="flex md:w-3/4 md:p-4">
-                <div class="hidden md:flex justify-center px-10">
-                    <img src="./src/img/icon.png" alt="Perdi Icon" class="w-44 h-44 rounded-2xl shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.25)] shadow-blue-800">
-                </div>
-                <div class="md:w-2/3">
-                    <h3 class="text-white font-bold tracking-wider text-xl md:text-2xl">Perdi <span class="text-red-700 text-opacity-50 font-bold">Dev</span></h3>
-                    <h3 class="text-white font-bold tracking-wider text-xl md:text-2xl pt-2 text-justify">Engineering Informatics Student at University of Hasanuddin</h3>
-                    <p class="text-white text-opacity-50 pt-4 tracking-wider md:text-justify">
-                        My name is Perdi and I have participated in an extracurricular activity called ICT (Information and Communication Technology) while in high school. 
-                        I have been familiar with programming since my second year of high school.
-                        I am a motivated and driven individual who is always looking for new challenges and opportunities to learn and grow.
-                    </p>
-                </div>
-            </div>
+      <div
+        class="flex flex-col items-center pt-24 pb-12 px-12 md:px-24 space-y-4 overflow-hidden"
+        data-aos="flip-left"
+      >
+        <div class="small-button">
+          <p class="text-opacity-50">About</p>
         </div>
+        <div class="flex md:w-3/4 md:p-4">
+          <div class="hidden md:flex justify-center px-10">
+            <img
+              src="./src/img/icon.png"
+              alt="Perdi Icon"
+              class="w-44 h-44 rounded-2xl shadow-[0px_0px_50px_-15px_rgba(0,0,0,0.25)] shadow-blue-800"
+            />
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-white font-bold tracking-wider text-xl md:text-2xl">
+              Perdi
+              <span class="text-red-700 text-opacity-50 font-bold">Dev</span>
+            </h3>
+            <h3
+              class="text-white font-bold tracking-wider text-xl md:text-2xl pt-2 text-justify"
+            >
+              Engineering Informatics Student at University of Hasanuddin
+            </h3>
+            <p
+              class="text-white text-opacity-50 pt-4 tracking-wider md:text-justify"
+            >
+              My name is Perdi and I have participated in an extracurricular
+              activity called ICT (Information and Communication Technology)
+              while in high school. I have been familiar with programming since
+              my second year of high school. I am a motivated and driven
+              individual who is always looking for new challenges and
+              opportunities to learn and grow.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End About -->
 
     <!-- Portofolio -->
     <section id="portofolio" class="container mx-auto">
-        <div class="w-full h-fit flex flex-col items-start px-12 py-16 md:px-24">
-            <div class="small-button">
-                <p>Portfolio</p>
-            </div>
-            <div class="w-full flex flex-col md:flex-row gap-3 md:justify-between md:items-center py-4">
-                <h1 class="font-bold text-2xl text-white">List of Projects</h1>
-                <div class="w-fit h-fit p-2 border border-primary border-opacity-50 rounded-md cursor-pointer hover:border-0 hover:bg-primary hover:bg-opacity-20">
-                    <p class="text-white text-opacity-50 tracking-wider text-xs">All</p>
-                </div>
-            </div>
-            <div class="flex flex-wrap w-full">
-                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
-                    <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
-                        <a href="https://blog.perdidev.my.id/"><h2 class="font-semibold text-white text-lg tracking-wide">Home-Blog</h2></a>
-                        <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
-                            <p class="text-white text-opacity-50 text-xs">Wordpress</p>
-                        </div>
-                        <img src="./src/img/portfolio/blog-perdi.webp" alt="Home-Blog" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
-                    <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
-                        <a href="https://home.ict.sma2pangkep.sch.id/"><h2 class="font-semibold text-white text-lg tracking-wide">Home-ICT</h2></a>
-                        <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
-                            <p class="text-white text-opacity-50 text-xs">Bootstrap</p>
-                        </div>
-                        <img src="./src/img/portfolio/home-ict.webp" alt="Home-ICT" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
-                    <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
-                        <a href="https://snc.sma2pangkep.sch.id/"><h2 class="font-semibold text-white text-lg tracking-wide">SNC-Osis-ICT</h2></a>
-                        <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
-                            <p class="text-white text-opacity-50 text-xs">Codeigniter</p>
-                        </div>
-                        <img src="./src/img/portfolio/snc-osis-ict.webp" alt="SNC-Osis-ICT" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
-                    <div class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3">
-                        <a href="https://perdidev.github.io/bwarasa"><h2 class="font-semibold text-white text-lg tracking-wide">Bwarasa-Landing Page</h2></a>
-                        <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
-                            <p class="text-white text-opacity-50 text-xs">Tailwindcss</p>
-                        </div>
-                        <img src="./src/img/portfolio/bwarasa.webp" alt="SNC-Osis-ICT" class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out">
-                    </div>
-                </div>
-            </div>
+      <div class="w-full h-fit flex flex-col items-start px-12 py-16 md:px-24">
+        <div class="small-button">
+          <p>Portfolio</p>
         </div>
+        <div
+          class="w-full flex flex-col md:flex-row gap-3 md:justify-between md:items-center py-4"
+        >
+          <h1 class="font-bold text-2xl text-white">List of Projects</h1>
+          <div
+            class="w-fit h-fit p-2 border border-primary border-opacity-50 rounded-md cursor-pointer hover:border-0 hover:bg-primary hover:bg-opacity-20"
+          >
+            <p class="text-white text-opacity-50 tracking-wider text-xs">All</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap w-full">
+          <div class="w-full md:w-1/3 p-3" data-aos="zoom-out-up">
+            <div
+              class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3"
+            >
+              <a href="https://blog.perdidev.my.id/"
+                ><h2 class="font-semibold text-white text-lg tracking-wide">
+                  Home-Blog
+                </h2></a
+              >
+              <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
+                <p class="text-white text-opacity-50 text-xs">Wordpress</p>
+              </div>
+              <img
+                src="./src/img/portfolio/blog-perdi.webp"
+                alt="Home-Blog"
+                class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-1/3 p-3 overflow-hidden"
+            data-aos="zoom-out-up"
+          >
+            <div
+              class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3"
+            >
+              <a href="https://home.ict.sma2pangkep.sch.id/"
+                ><h2 class="font-semibold text-white text-lg tracking-wide">
+                  Home-ICT
+                </h2></a
+              >
+              <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
+                <p class="text-white text-opacity-50 text-xs">Bootstrap</p>
+              </div>
+              <img
+                src="./src/img/portfolio/home-ict.webp"
+                alt="Home-ICT"
+                class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-1/3 p-3 overflow-hidden"
+            data-aos="zoom-out-up"
+          >
+            <div
+              class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3"
+            >
+              <a href="https://snc.sma2pangkep.sch.id/"
+                ><h2 class="font-semibold text-white text-lg tracking-wide">
+                  SNC-Osis-ICT
+                </h2></a
+              >
+              <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
+                <p class="text-white text-opacity-50 text-xs">Codeigniter</p>
+              </div>
+              <img
+                src="./src/img/portfolio/snc-osis-ict.webp"
+                alt="SNC-Osis-ICT"
+                class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-1/3 p-3 overflow-hidden"
+            data-aos="zoom-out-up"
+          >
+            <div
+              class="w-full border border-primary border-opacity-50 rounded-xl p-4 pb-0 md:p-6 md:pb-0 space-y-3"
+            >
+              <a href="https://perdidev.github.io/bwarasa"
+                ><h2 class="font-semibold text-white text-lg tracking-wide">
+                  Bwarasa-Landing Page
+                </h2></a
+              >
+              <div class="w-fit px-2 py-1 bg-primary bg-opacity-20 rounded-lg">
+                <p class="text-white text-opacity-50 text-xs">Tailwindcss</p>
+              </div>
+              <img
+                src="./src/img/portfolio/bwarasa.webp"
+                alt="SNC-Osis-ICT"
+                class="rounded-t-lg w-full h-52 bg-cover hover:scale-105 hover:rounded-lg hover:transition-all delay-100 ease-in-out"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End -->
 
     <!-- Technologi -->
     <section id="technology" class="container mx-auto">
-        <div class="flex flex-col items-center py-16 space-y-4" data-aos="fade-in">
-            <div class="small-button">
-                <p>Skill-Exprience</p>
-            </div>
-            <h1 class="font-bold text-2xl text-white tracking-wider">Tech Stack</h1>
-            <div class="flex flex-wrap justify-center gap-2 px-6 md:py-4">
-                <div class="tech-logo">
-                    <img src="./src/img/tech/html5.svg" alt="html-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/css3.svg" alt="css-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/javascript.svg" alt="js-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/nodejs.svg" alt="node-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/nestjs.svg" alt="nestjs-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/nextjs.svg" alt="nextjs-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/codeigniter.svg" alt="ci-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/tailwindcss.svg" alt="tailwindcss-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/bootstrap.svg" alt="bootstrap-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/git.svg" alt="git-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/github.svg" alt="github-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/c.svg" alt="c-icon">
-                </div>
-                <div class="tech-logo">
-                    <img src="./src/img/tech/c-plus-plus.svg" alt="cpp-icon">
-                </div>
-            </div>
-        </div>        
+      <div
+        class="flex flex-col items-center py-16 space-y-4"
+        data-aos="fade-in"
+      >
+        <div class="small-button">
+          <p>Skill-Exprience</p>
+        </div>
+        <h1 class="font-bold text-2xl text-white tracking-wider">Tech Stack</h1>
+        <div class="flex flex-wrap justify-center gap-2 px-6 md:py-4">
+          <div class="tech-logo">
+            <img src="./src/img/tech/html5.svg" alt="html-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/css3.svg" alt="css-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/javascript.svg" alt="js-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/nodejs.svg" alt="node-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/nestjs.svg" alt="nestjs-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/nextjs.svg" alt="nextjs-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/codeigniter.svg" alt="ci-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/tailwindcss.svg" alt="tailwindcss-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/bootstrap.svg" alt="bootstrap-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/git.svg" alt="git-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/github.svg" alt="github-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/c.svg" alt="c-icon" />
+          </div>
+          <div class="tech-logo">
+            <img src="./src/img/tech/c-plus-plus.svg" alt="cpp-icon" />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End -->
 
     <!-- Contact -->
     <section id="contact" class="container mx-auto">
-        <div class="w-full flex flex-col items-center gap-4 p-16" data-oas="zoom-in-up">
-            <div class="small-button">
-                <p>Contact</p>
-            </div>
-            <div>
-                <h1 class="font-bold text-2xl text-white tracking-wide">Need Help</h1>
-            </div>
-            <div class="space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram opacity-50" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7B4AE2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
-                </svg>
-                <p class="text-primary text-opacity-70">Email:</p>
-            </div>
-            <p class="text-white text-opacity-50"><a href="mailto:perdidev@gmail.com">perdidev@gmail.com</a></p>
+      <div
+        class="w-full flex flex-col items-center gap-4 p-16"
+        data-oas="zoom-in-up"
+      >
+        <div class="small-button">
+          <p>Contact</p>
         </div>
+        <div>
+          <h1 class="font-bold text-2xl text-white tracking-wide">Need Help</h1>
+        </div>
+        <div class="space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-telegram opacity-50"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#7B4AE2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+          </svg>
+          <p class="text-primary text-opacity-70">Email:</p>
+        </div>
+        <p class="text-white text-opacity-50">
+          <a href="mailto:perdidev@gmail.com">perdidev@gmail.com</a>
+        </p>
+      </div>
     </section>
     <!-- End Contact -->
 
     <!-- Footer -->
     <footer>
-        <div class="w-full bg-primary h-fit bg-opacity-20 p-4">
-            <div class="flex flex-col items-center">
-                <div class="flex justify-center gap-3 pb-3">
-                    <a href="https://linkedin.com/in/perdi-dev" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-linkedin opacity-50" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/perdiDev" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-github opacity-50" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/perdidev/" target="_blank" class="hover:scale-105 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-instagram opacity-50" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="text-xs text-white font-thin opacity-50 tracking-widest">Copyright © perdidev 2023</p>
-            </div>
+      <div class="w-full bg-primary h-fit bg-opacity-20 p-4">
+        <div class="flex flex-col items-center">
+          <div class="flex justify-center gap-3 pb-3">
+            <a
+              href="https://linkedin.com/in/perdi-dev"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-linkedin opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/perdiDev"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-github opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/perdidev/"
+              target="_blank"
+              class="hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                class="bi bi-instagram opacity-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-xs text-white font-thin opacity-50 tracking-widest">
+            Copyright © perdidev 2023
+          </p>
         </div>
+      </div>
     </footer>
     <!-- End footer -->
 
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>
